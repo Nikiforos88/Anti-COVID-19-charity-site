@@ -1,0 +1,150 @@
+#logo{
+    width: 65px;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 85px;
+    display: inline-block;
+}
+
+.coronovirus{
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#navBarLine {
+    color: grey;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.navbar-brand{
+    color: black;
+    display: inline-flex;
+
+}
+
+#tips {
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 115px;
+}
+
+#pageWallpaper {
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.subnav {
+    margin-left: 280px;
+    margin-top: 3px;
+    position: fixed;
+    display: inline-flex;
+}
+
+.selectpicker {
+    margin-top: 10px;
+    margin-left: 800px;
+}
+#home {
+    margin-left: 50px;
+    margin-top: 8px;
+    display: inline-block;
+    color: black;
+}
+
+#events {
+    margin-left: 30px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#donation {
+    margin-left: 30px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#aboutUs {
+    margin-left: 30px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#contactUs {
+    margin-left: 30px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#en {
+    margin-left: 800px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#usFlag {
+    margin-left: 800px;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+#donationWallpaper {
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}    
+
+.needs-validation {
+    margin-top: 170px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footerDonationPage {
+    text-align: center;
+}
+
+#contacUs {
+    margin-top: 85px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+#maps {
+    margin-left: 870px;
+    margin-top: -450px;
+    margin-bottom: 10px;
+}
+
+#nonProfit {
+    margin-left: 1070px;
+    margin-top: -650px;
+    margin-bottom: 10px;
+}
+
+.btn-group{
+    margin-top: 65px;
+    margin-left: 400px;
+}
+
+#april {
+    margin-top: -70px;
+    margin-left: -370px;
+}
+
+#eventsHeader {
+    margin-left: -170px;
+}
+
+#stayHome {
+    margin-left: 800px;
+    margin-top: -300px;
+}

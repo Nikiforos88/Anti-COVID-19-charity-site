@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact us</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="donation.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar">
+		<a class="navbar-brand" href="#">
+			<img id="logo" src="logo.jpg"/>
+			<div class="coronovirus">
+				<h3>FIGHT <br> Coronavirus</h3>
+			</div>
+		</a>	
+			<div class="subnav">
+				<div id="home"> <a href="Index.html">Home</a> </div>
+				<div id="events"> <a href="events.html">Events</a></div>
+				<div id="donation"> <a href="donation_page.html">Donation</a></div>
+				<div id="aboutUs"> <a href="about_us.html">About us</a></div>
+				<div id="contactUs"> <a href="contact_us.html">Contact us</a></div>
+				<script src="donation.js"></script>
+				<select class="selectpicker" data-width="fit">
+					<option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+				 	<option data-content='<span class="flag-icon flag-icon-gr"></span> Greek'>Greek</option>
+				</select>
+			</div>
+	</nav>
+	<hr id="navBarLine">
+    <div>
+        
+		<div class="col-md-4" id="tips">
+            <h1>Contact us</h1>
+            <div id="contacUs">
+                <p><b>Address: </b>Fidipidou 13, Athens</p>
+                <p><b>Phone: </b>2107776565</p>
+                <p><b>Fax: </b>2107776556</p>
+                <br><br>
+                <h3>Email form:</h3>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Your message</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Text your message here...">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Send verification sms</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+            </div>
+            
+		</div>         
+		<div class="col-md-6" id="maps"> 
+            <img src="googleMaps.PNG" />
+            <!--EDO EXEI KANONIKO MAPS ALLA DEN DOULEUEI AKOMA
+            <div id="googleMap" style="width:100%;height:500px;width: 500px;"></div>
+                <script>
+                    function myMap() {
+                    var mapProp= {
+                    center:new google.maps.LatLng(37.986501, 23.763099),
+                    zoom:5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+		</div>
+    </div>
+    <br><br><br><br><br><br><br>
+    <footer class="footerDonationPage">Copyright by: <cite title="Source Title"> Nikiforos Ioannidis</cite></footer>
+</body>
+</html>
