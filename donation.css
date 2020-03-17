@@ -49,7 +49,7 @@
 
 .selectpicker {
     margin-top: 10px;
-    margin-left: 800px;
+    margin-left: 300px;
 }
 #home {
     margin-left: 50px;
@@ -98,7 +98,7 @@
     margin-top: 0px;
     margin-left: 100px;
     margin-bottom: 10px;
-}    
+}
 
 .needs-validation {
     margin-top: 170px;
@@ -147,4 +147,16 @@
 #stayHome {
     margin-left: 800px;
     margin-top: -300px;
+}
+
+#facebookButton {
+    margin-left: 470px;
+}
+
+#twitterButton {
+    /*It's not important*/
+}
+
+#googlePlusButton {
+    margin-top: 2px;
 }
