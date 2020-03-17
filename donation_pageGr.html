@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Δωρεές</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="donation.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar">
+		<a class="navbar-brand" href="#">
+			<img id="logo" src="logo.jpg"/>
+			<div class="coronovirus">
+				<h3>FIGHT <br> Coronavirus</h3>
+			</div>
+		</a>
+			<div class="subnav">
+				<div id="home"> <a href="IndexGr.html">Αρχική</a> </div>
+				<div id="events"> <a href="eventsGr.html">Εκδηλώσεις</a></div>
+				<div id="donation"> <a href="donation_pageGr.html">Δωρεές</a></div>
+				<div id="aboutUs"> <a href="about_usGr.html">Σχετικά με εμάς</a></div>
+				<div id="contactUs"> <a href="contact_usGr.html">Επικοινωνία</a></div>
+				<script src="donation.js"></script>
+				<select class="selectpicker" data-width="fit">
+					<option data-content='<span class="flag-icon flag-icon-gr"></span> Greek'>Ελληνικά</option>
+					<option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+				</select>
+			</div>
+	</nav>
+	<hr id="navBarLine">
+    <div class="row "id="pageWallpaper">
+        <div class="col-md-4" id="tips">
+            <h1>Χρειαζόμαστε την βοήθεια σας</h1>
+			<form class="needs-validation" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">Όνομα</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Γεώργιος" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Επίθετο</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Ματθαίου" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Ηλεκτρονική διεύθυνση</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                      </div>
+                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Κωδικός τράπεζας</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">Πόλη</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom05">Ταχ. Κώδικας</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Συμφωνώ με τους όρους και τις προϋποθέσεις
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Υποβολή
+              </form>
+
+              <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+		</div>
+		<div class="col-md-4">
+			<img id="donationWallpaper" src="donationWallpaper.jpg" width="920" height="620"/>
+		</div>
+    </div>
+    <br><br><br><br><br>
+    <footer class="footer">Copyright by: <cite title="Source Title">Νικηφόρος Ιωαννίδης</cite></footer>
+</body>
+</html>
