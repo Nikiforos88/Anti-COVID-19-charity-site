@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Events</title>
+	<title>Fight Coronavirus (COVID-19)</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="donation.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav class="navbar">
@@ -27,16 +31,16 @@
                 <a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><img src="facebookButton.png" width="40px" height="40px"/></a><br>
 				<a id="twitterButton" href="https://twitter.com/i/flow/signup"><img src="twitterButton.png" width="40px" height="40px"/></a><br>
 				<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><img src="googlePlusButton.png" width="35px" height="35px"/></a><br>
-                <select class="selectpicker" data-width="fit">
-					<option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-				 	<option data-content='<span class="flag-icon flag-icon-gr"></span> Greek'>Ελληνικά</option>
+                <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+					<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="events.html">English</option>
+				 	<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="eventsGr.html">Ελληνικά</option>
 				</select>
 			</div>
 	</nav>
 	<hr id="navBarLine">
 
-        <div class="col-md-4" id="tips">
-            <h1 id="eventsHeader">Events!</h1>
+        <div class="col-md-6">
+            <h1 id="eventsHeader">Events</h1>
             <br><br>
             <div class="container">
                 <div class="row">
@@ -116,8 +120,7 @@
 
         </div>
         <img id="stayHome" src="stayHome.jpg" alt="420" width="500px" height="350px"/>
-        <br>
-        <br>
+        <br><br><br><br>
         <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action active">
               <b>Event List</b>
@@ -128,7 +131,7 @@
             <a href="#" class="list-group-item list-group-item-action disabled">...</a>
           </div>
 
-    <br><br><br><br>
+    <br><br><br><br><br><br>
     <footer class="footerDonationPage">Copyright by: <cite title="Source Title"> Nikiforos Ioannidis</cite></footer>
 </body>
 </html>

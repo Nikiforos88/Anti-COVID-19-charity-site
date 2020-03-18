@@ -8,6 +8,10 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav class="navbar">
@@ -27,49 +31,43 @@
 				<a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><img src="facebookButton.png" width="40px" height="40px"/></a><br>
 				<a id="twitterButton" href="https://twitter.com/i/flow/signup"><img src="twitterButton.png" width="40px" height="40px"/></a><br>
 				<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><img src="googlePlusButton.png" width="35px" height="35px"/></a><br>
-				<select class="selectpicker" data-width="fit">
-					<option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</p></option>
-
-					<a href="#" class="language" rel="en-US"><img src="assets/img/en_US.png" alt="English" /></a>
-
-				 	<option data-content='<span class="flag-icon flag-icon-gr"></span> Greek'>Ελληνικά</option>
+				<select class="selectpicker" data-width="fit" onchange="location = this.value;">
+					<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="Index.html">English</option>
+				 	<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="IndexGR.html">Ελληνικά</option>
 				</select>
 			</div>
 	</nav>
 	<hr id="navBarLine">
 	<div class="row "id="pageWallpaper">
-		<div class="col-md-3" id="tips">
-			<h3>Protection Tips</h3>
-			<img src="alert.jpeg" width="380" height="220"/>
-			<ol>
-				<li>Wash your hands.</li>
-				<br>
-				<li>Try to touch your face less.</li>
-				<br>
-				<li>Keep your distance.</li>
-				<br>
-				<li>Don’t stockpile masks.</li>
-				<br>
-				<li>Do stock up on food and medicine.</li>
-			</ol>
+		<div class="col-md-6">
+			<p id="text">The 2019–20 coronavirus pandemic is an ongoing global pandemic of coronavirus disease 2019 (COVID-19) caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was first reported in Wuhan, Hubei, China, in December 2019.On 11 March 2020, the World Health Organization declared the outbreak a pandemic. As of 12 March 2020, over 129,000 cases have been confirmed in more than 120 countries and territories, with major outbreaks in mainland China, Italy, South Korea, and Iran. More than 4,700 have died from the disease and 68,000 have recovered.
+				The virus spreads between people in a way similar to influenza, via respiratory droplets from coughing. The time between exposure and symptom onset is typically five days, but may range from two to fourteen days.
+			</p>
+			<p id="text2">Symptoms are most often fever, cough, and shortness of breath. Complications may include pneumonia and acute respiratory distress syndrome. There is currently no vaccine or specific antiviral treatment, but research is ongoing. Efforts are aimed at managing symptoms and supportive therapy. Recommended preventive measures include handwashing, maintaining distance from other people (particularly those who are sick), and monitoring and self-isolation for fourteen days for people who suspect they are infected.
+				Public health responses around the world have included travel restrictions, quarantines, curfews, event cancellations, and school closures. They have included the quarantine of all of Italy and the Chinese province of Hubei; various curfew measures in China and South Korea; screening methods at airports and train stations; and travel advisories regarding regions with community transmission. Schools have closed nationwide in 22 countries or locally in 17 countries, affecting more than 370 million students.
+				Worldwide effects of the pandemic include social and economic instability, xenophobia and racism against people of Chinese and East Asian descent, and the online spread of misinformation and conspiracy theories about the virus.
+			</p>
 		</div>
-		<div class="col-md-2"></div>
-		<div class="col-md-3">
+		<div class="col-md-6">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img class="d-block w-100" src="carousel1.jpg" alt="First slide">
+					<img class="d-block w-100" src="carousel1.jpg" alt="First slide">
 				</div>
 				<div class="carousel-item">
-				<img class="d-block w-100" src="carousel2.jpg" alt="Second slide">
+					<img class="d-block w-100" src="carousel2.jpg" alt="Second slide">
 				</div>
 				<div class="carousel-item">
-				<img class="d-block w-100" src="carousel3.jpg" alt="Third slide">
+					<img class="d-block w-100" src="carousel3.jpg" alt="Third slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="carousel4.jpg" alt="Fourth slide">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -82,12 +80,15 @@
 			</a>
 			</div>
 		</div>
+		<div class="col-md-3" id="tips">
+			<h2><u>Protection Tips</u></h2>
+				<h5>Wash your hands.</h5>
+				<h5>Try to touch your face less.</h5>
+				<h5>Keep your distance.</h5>
+				<h5>Don’t stockpile masks.</h5>
+		</div>
 	</div>
-	<p id="text">The 2019–20 coronavirus pandemic is an ongoing global pandemic of coronavirus disease 2019 (COVID-19) caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was first reported in Wuhan, Hubei, China, in December 2019.On 11 March 2020, the World Health Organization declared the outbreak a pandemic. As of 12 March 2020, over 129,000 cases have been confirmed in more than 120 countries and territories, with major outbreaks in mainland China, Italy, South Korea, and Iran. More than 4,700 have died from the disease and 68,000 have recovered.
-		The virus spreads between people in a way similar to influenza, via respiratory droplets from coughing. The time between exposure and symptom onset is typically five days, but may range from two to fourteen days. Symptoms are most often fever, cough, and shortness of breath. Complications may include pneumonia and acute respiratory distress syndrome. There is currently no vaccine or specific antiviral treatment, but research is ongoing. Efforts are aimed at managing symptoms and supportive therapy. Recommended preventive measures include handwashing, maintaining distance from other people (particularly those who are sick), and monitoring and self-isolation for fourteen days for people who suspect they are infected.
-		Public health responses around the world have included travel restrictions, quarantines, curfews, event cancellations, and school closures. They have included the quarantine of all of Italy and the Chinese province of Hubei; various curfew measures in China and South Korea; screening methods at airports and train stations; and travel advisories regarding regions with community transmission. Schools have closed nationwide in 22 countries or locally in 17 countries, affecting more than 370 million students.
-		Worldwide effects of the pandemic include social and economic instability, xenophobia and racism against people of Chinese and East Asian descent, and the online spread of misinformation and conspiracy theories about the virus.
-	</p>
-	<footer class="footer">Copyright by: <cite title="Source Title"> Nikiforos Ioannidis</cite></footer>
+	<br><br><br><br>
+	<footer class="footer">Copyright by: <cite title="Source Title">Nikiforos Ioannidis</cite></footer>
 </body>
 </html>
