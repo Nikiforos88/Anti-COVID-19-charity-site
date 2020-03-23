@@ -176,10 +176,20 @@
 
 #facebookButton {
     margin-left: 470px;
+
+}
+
+#facebookButton2 {
+    margin-left: 377px;
+
+}
+
+#twitterButton {
+    margin-left: 2px;
 }
 
 #googlePlusButton {
-    margin-top: 2px;
+    margin-left: 2px;
 }
 
 #giveUsYourHelp {
@@ -224,3 +234,4 @@
     margin-top: 50px;
     display: inline-block;
 }
+
