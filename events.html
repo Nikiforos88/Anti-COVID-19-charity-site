@@ -13,32 +13,62 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-dark bg-dark sticky-top">
-		<a class="navbar-brand" href="#">
-			<img id="logo" src="logo.jpg"/>
-			<div class="coronovirus">
-				<h3>FIGHT <br> Coronavirus</h3>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+		<ul class="navbar mr-auto">
+			<a class="navbar-brand" href="#">
+				<img id="logo" src="logo.png"/>
+			</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<ul class="navbar-nav mr-auto">
+					<div class="nav-item">
+						<a href="Index.html" class="nav-link">Home</a>
+					</div>
+					<div class="nav-item">
+						<a href="events.html" class="nav-link">Events</a>
+					</div>
+					<div class="nav-item">
+					<a href="donation_page.html" class="nav-link">Donation</a>
+					</div>
+					<div class="nav-item">
+						<a href="about_us.html" class="nav-link">About us</a>
+					</div>
+						<a href="contact_us.html" class="nav-link">Contact us</a>
+					</div>
+				</ul>
 			</div>
-		</a>
-			<div class="subnav">
-				<div id="home"> <a href="Index.html">Home</a> </div>
-				<div id="events"> <a href="events.html">Events</a></div>
-				<div id="donation"> <a href="donation_page.html">Donation</a></div>
-				<div id="aboutUs"> <a href="about_us.html">About us</a></div>
-				<div id="contactUs"> <a href="contact_us.html">Contact us</a></div>
-				<script src="donation.js"></script>
-                <a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></i></a><br>
-				<a id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a><br>
-				<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a><br>
-                <select class="selectpicker" data-width="fit" onchange="location = this.value;">
-					<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="events.html">English</option>
-				 	<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="eventsGr.html">Ελληνικά</option>
-				</select>
+		</ul>
+		<div id="buttonsLanguage" class="row">
+			<ul class="navbar mr-auto">
+				<div class="col-md-1">
+					<a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+				</div>
+				<div class="col-md-1">
+					<a id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+				</div>
+				<div class="col-md-1">
+					<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a>
+				</div>
+				<div class="col-md-3">
+					<select class="selectpicker" data-width="fit" onchange="location = this.value;">
+						<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="events.html">English</option>
+						<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="eventsGr.html">Ελληνικά</option>
+					</select>
+                </div>
+                <div class="offset-1">
+				</div>
 			</div>
-	</nav>
-	<div class="col-md-6">
+		</ul>
+    </nav>
+
+
+    <div class="row">
+	    <div class="col-md-6">
             <h1 id="eventsHeader">Events</h1>
             <br><br>
             <div class="container">
@@ -47,13 +77,13 @@
                         <table class="table-condensed table-bordered table-striped">
                             <thead>
                                 <tr>
-                                  <th colspan="7">
+                                <th colspan="7">
                                     <span class="btn-group">
                                         <a class="btn"><i class="icon-chevron-left"></i></a>
                                         <a class="btn active" id="april">April 2020</a>
                                         <a class="btn"><i class="icon-chevron-right"></i></a>
                                     </span>
-                                  </th>
+                                </th>
                                 </tr>
                                 <tr>
                                     <th>Mo</th>
@@ -116,21 +146,34 @@
                     </div>
                 </div>
             </div>
-
         </div>
-        <img id="stayHome" src="stayHome.jpg" alt="420" width="500px" height="350px"/>
-        <br><br><br><br>
-        <div class="list-group">
+    </div>
+    <div class="row">
+	    <div class="col-md-6">
+            <img id="stayHome" src="stayHome.jpg" alt="420" width="500px" height="350px"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
             <a href="#" class="list-group-item list-group-item-action active">
-              <b>Event List</b>
+            <b>Event List</b>
             </a>
             <a href="#" class="list-group-item list-group-item-action">until 21/04/20 Stay Home!</a>
             <a href="#" class="list-group-item list-group-item-action">...</a>
             <a href="#" class="list-group-item list-group-item-action">...</a>
             <a href="#" class="list-group-item list-group-item-action disabled">...</a>
-          </div>
-
-    <br><br><br><br><br><br>
-    <footer class="footerDonationPage">Copyright by: <cite title="Source Title"> Nikiforos Ioannidis</cite></footer>
+        </div>
+    </div>
+    <div divclass="row" id="footer">
+        <div class="col-md-12">
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
+            </div>
+            <script src="donation.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+    </div>
 </body>
 </html>

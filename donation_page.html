@@ -13,31 +13,59 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-dark bg-dark sticky-top">
-		<a class="navbar-brand" href="#">
-			<img id="logo" src="logo.jpg"/>
-			<div class="coronovirus">
-				<h3>FIGHT <br> Coronavirus</h3>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+		<ul class="navbar mr-auto">
+			<a class="navbar-brand" href="#">
+				<img id="logo" src="logo.png"/>
+			</a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<ul class="navbar-nav mr-auto">
+					<div class="nav-item">
+						<a href="Index.html" class="nav-link">Home</a>
+					</div>
+					<div class="nav-item">
+						<a href="events.html" class="nav-link">Events</a>
+					</div>
+					<div class="nav-item">
+					<a href="donation_page.html" class="nav-link">Donation</a>
+					</div>
+					<div class="nav-item">
+						<a href="about_us.html" class="nav-link">About us</a>
+					</div>
+						<a href="contact_us.html" class="nav-link">Contact us</a>
+					</div>
+				</ul>
 			</div>
-		</a>
-			<div class="subnav">
-				<div id="home"> <a href="Index.html">Home</a> </div>
-				<div id="events"> <a href="events.html">Events</a></div>
-				<div id="donation"> <a href="donation_page.html">Donation</a></div>
-				<div id="aboutUs"> <a href="about_us.html">About us</a></div>
-				<div id="contactUs"> <a href="contact_us.html">Contact us</a></div>
-				<script src="donation.js"></script>
-        <a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></i></a><br>
-				<a id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a><br>
-				<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a><br>
-        <select class="selectpicker" data-width="fit" onchange="location = this.value;">
-					<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="donation_page.html">English</option>
-				 	<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="donation_pageGr.html">Ελληνικά</option>
-				</select>
+		</ul>
+		<div id="buttonsLanguage" class="row">
+			<ul class="navbar mr-auto">
+				<div class="col-md-1">
+					<a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+				</div>
+				<div class="col-md-1">
+					<a id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+				</div>
+				<div class="col-md-1">
+					<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a>
+				</div>
+				<div class="col-md-3">
+					<select class="selectpicker" data-width="fit" onchange="location = this.value;">
+						<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="donation_page.html">English</option>
+						<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="donation_pageGr.html">Ελληνικά</option>
+					</select>
+        </div>
+        <div class="offset-1">
+				</div>
 			</div>
+		</ul>
 	</nav>
+	<div cla
 	<div class="row "id="pageWallpaper">
         <div class="col-md-4">
             <h1 id="giveUsYourHelp">Give us your help</h1>

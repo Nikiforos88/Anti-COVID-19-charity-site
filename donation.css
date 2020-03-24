@@ -1,237 +1,68 @@
+/* Page dimension settings*/
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* Navnar Logo */
 #logo{
-    width: 65px;
-    height: 65px;
-    margin-top: 10px;
-    margin-left: 85px;
-    display: inline-block;
-}
-
-.coronovirus{
-    margin-top: 8px;
-    display: inline-block;
-}
-
-#navBarLine {
-    color: grey;
-    margin-top: 10px;
-    background-color: black;
-}
-
-.navbar-brand{
-    color: black;
-    display: inline-flex;
+    width: 70px;
+    height: 70px;
 
 }
 
-#tips {
-    margin-top: -50px;
-    text-align: left;
-    margin-left: 1300px;
+/* Navbar */
+#buttonsLanguage {
+    margin: 0;
+    justify-content: flex-end;
 }
 
-#tips2 {
-    margin-top: -90px;
-    text-align: left;
-    margin-left: 1250px;
-
-}
-
-#carouselExampleIndicators {
-    margin-top: 80px;
-    margin-right: 80px;
-}
-
-#text {
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 70px;
-    margin-right: 150px;
-}
-#text2 {
-    text-align: left;
-    margin-top: -5px;
-    margin-left: 70px;
-    margin-right: 150px;
-}
-.subnav {
-    margin-left: 280px;
-    margin-top: 3px;
-    position: fixed;
-    display: inline-flex;
-}
-
-.selectpicker {
-    margin-top: 10px;
-    margin-left: 300px;
-}
-#home {
-    margin-left: 50px;
-    margin-top: 8px;
-    display: inline-block;
-    color: black;
-}
-
-#events {
-    margin-left: 30px;
-    margin-top: 8px;
-    display: inline-block;
-}
-
-#donation {
-    margin-left: 30px;
-    margin-top: 8px;
-    display: inline-block;
-}
-
-#aboutUs {
-    margin-left: 30px;
-    margin-top: 8px;
-    display: inline-block;
-}
-
-#contactUs {
-    margin-left: 30px;
-    margin-top: 8px;
-    display: inline-block;
-}
-
-.container {
-    margin-left: 190px;
-}
-
-#en {
-    margin-left: 800px;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-#usFlag {
-    margin-left: 800px;
-    margin-top: 8px;
-    display: inline-block;
-}
-
-#donationWallpaper {
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-bottom: 10px;
-}
-
-.needs-validation {
-    margin-top: 100px;
-}
-
-.footer {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.footerDonationPage {
-    text-align: center;
-}
-
-#contacUs {
-    margin-top: 85px;
-    margin-left: 200px;
-    text-align: left;
-}
-
-#maps {
-    margin-left: 870px;
-    margin-top: -450px;
-    margin-bottom: 10px;
-}
-
-#nonProfit {
-    margin-left: 1070px;
-    margin-top: -650px;
-    margin-bottom: 10px;
-}
-
-.btn-group{
-    margin-top: 65px;
-    margin-left: 400px;
-}
-
-#april {
-    margin-top: -70px;
-    margin-left: -370px;
-    margin-right: 40px;
-}
-
-#eventsHeader2 {
-    margin-left: 280px;
-    margin-top: 60px;
-}
-
-#eventsHeader {
-    margin-left: 330px;
-    margin-top: 60px;
-}
-
-#stayHome {
-    margin-left: 900px;
-    margin-top: -300px;
-}
-
-#facebookButton {
-    margin-left: 470px;
-
-}
-
-#facebookButton2 {
-    margin-left: 377px;
-
-}
-
+/* Twitter Button */
 #twitterButton {
     margin-left: 2px;
 }
 
+/* Google+ Button */
 #googlePlusButton {
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
-#giveUsYourHelp {
-    margin-top: 50px;
-    margin-left: 280px;
+/* Link buttons colors */
+a:visited {
+    color: gray;
 }
 
-#giveUsYourHelp2 {
-    margin-top: 50px;
-    margin-left: 280px;
+/* Paragraph dimensions */
+p {
+    margin: 10px;
 }
 
-.needs-validation {
-    margin-left: 50px;
-    margin-right: -200px;
+/* Tips Alignment */
+#alighCenter {
+    text-align: center;
 }
 
-#aboutUsHeader {
-    margin-left: 370px;
-    margin-top: 60px;
-
+/* Footer Alignment */
+.footer {
+    text-align: center;
+    bottom: 0;
 }
 
-#aboutUsText {
-    margin-left: 150px;
-    margin-right: 1000px;
+
+/* EDW KAITI THELEI KAI ALLO*/
+#nonProfit {
+    align-items: center;
 }
 
-#aboutUsText2 {
-    margin-left: 150px;
-    margin-right: 1000px;
-}
 
-#contactUsHeader {
-    margin-left: 345px;
-    margin-top: 50px;
-    display: inline-block;
-}
 
-#contactUsText {
-    margin-left: 250px;
-    margin-top: 50px;
-    display: inline-block;
-}
+
+
+
+
+
+
 
