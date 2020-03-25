@@ -40,9 +40,16 @@ p {
     margin: 10px;
 }
 
-/* Tips Alignment */
-#alighCenter {
+/* Alignment */
+#alignCenter {
     text-align: center;
+}
+
+/* Tips Alignment Vertical */
+.tips {
+    position: absolute;
+    vertical-align: middle;
+   
 }
 
 /* Footer Alignment */
@@ -52,9 +59,9 @@ p {
 }
 
 
-/* EDW KAITI THELEI KAI ALLO*/
+/* Non-profit Label*/
 #nonProfit {
-    align-items: center;
+    align-self: left;
 }
 
 

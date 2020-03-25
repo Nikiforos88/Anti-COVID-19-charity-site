@@ -1,10 +1,16 @@
 ok_1. allo logo
+
 ok_2. allo color sta links (about us)
+
 ok_3. margin sta social buttons
-ok_4. na mh fainetai to keno sta deksia ths selidas (CAROUSEL/PIPOULA)
+
+ok_4. na mh fainetai to keno sta deksia ths selidas (CAROUSEL/PIPOULA#NOT)
+
 ok_5. na organwseis to css (oles oi klaseis tou navbar panw me comments)
 
+ok_6. collapse header link buttons
 
+ok_7Etouto den mou arese arketa! 
 row
     col-12
         mikro keimeno
