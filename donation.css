@@ -45,13 +45,6 @@ p {
     text-align: center;
 }
 
-/* Tips Alignment Vertical */
-.tips {
-    position: absolute;
-    vertical-align: middle;
-   
-}
-
 /* Footer Alignment */
 .footer {
     text-align: center;
