@@ -3,29 +3,26 @@
 <head>
 	<title>Fight Coronavirus (COVID-19)</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="donation.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-		<ul class="navbar mr-auto">
+	<nav class="navbar navbar-expand-lg sticky-top">
+		<ul class="navbar mr-auto margin-bottom-0">
 			<a class="navbar-brand" href="#">
 				<img id="logo" src="logo.png"/>
 			</a>
+			<h1 class="mobile-title hide-on-desktop">COVID-19</h1>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav">
 					<div class="nav-item">
 						<a href="Index.html" class="nav-link">Home</a>
 					</div>
@@ -43,16 +40,16 @@
 				</ul>
 			</div>
 		</ul>
-		<div id="buttonsLanguage" class="row">
-			<ul class="navbar mr-auto">
+		<div id="buttonsLanguage" class="row show-on-desktop">
+			<ul class="navbar mr-auto margin-bottom-0">
 				<div class="col-md-1">
-					<a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+					<a class="socialButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
 				</div>
 				<div class="col-md-1">
-					<a id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+					<a class="socialButton" id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
 				</div>
 				<div class="col-md-1">
-					<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a>
+					<a class="socialButton" id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a>
 				</div>
 				<div class="col-md-3">
 					<select class="selectpicker" data-width="fit" onchange="location = this.value;">
@@ -65,33 +62,21 @@
 			</div>
 		</ul>
 	</nav>
-	<div class="row">
-		<div class="offset-3">
+	<div class="row" id="header">
+		<div class="offset-2">
 		</div>
-		<div class="col-md-6">
-			<div>
-				<br>
-				<h1 id="alignCenter">What is Coronavirus?</h1>
-				<br>
-			</div>	
-		</div>
-		<div class="offset-3">
-		</div>
-	</div>
-	<div class="row">
-		<div class="offset-3">
-		</div>
-		<div class="col-md-6">
+		<div class="col-md-8">
+			<h1 id="alignCenter">What is Coronavirus?</h1>
 			<p>The 2019–20 coronavirus pandemic is an ongoing global pandemic of coronavirus disease 2019 (COVID-19) caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The virus was first reported in Wuhan, Hubei, China, in December 2019.On 11 March 2020, the World Health Organization declared the outbreak a pandemic. As of 12 March 2020, over 129,000 cases have been confirmed in more than 120 countries and territories, with major outbreaks in mainland China, Italy, South Korea, and Iran. More than 4,700 have died from the disease and 68,000 have recovered.
 				The virus spreads between people in a way similar to influenza, via respiratory droplets from coughing. The time between exposure and symptom onset is typically five days, but may range from two to fourteen days.
 			</p>
 			<br>
 			<br>
 		</div>
-		<div class="offset-3">
+		<div class="offset-2">
 		</div>
 	</div>
-	<div class="row align-items-center">
+	<div class="row align-items-center" id="carousel">
 		<div class="offset-2">
 		</div>
 		<div class="col-md-5" id="alignCenter">

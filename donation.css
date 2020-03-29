@@ -1,3 +1,15 @@
+/* Media Queries for sections and font-size */
+@media (max-width: 649px) {
+    .show-on-desktop, .show-on-tablets, .hide-on-mobile { display: none!important; }
+}
+@media (min-width: 650px) and (max-width: 979px) {
+    .show-on-desktop, .hide-on-tablets, .show-on-mobile { display: none!important; }
+}
+@media (min-width: 980px) {
+    .hide-on-desktop, .show-on-tablets, .show-on-mobile { display: none!important; }
+}
+
+
 /* Page dimension settings*/
 html,body {
     width: 100%;
@@ -14,10 +26,24 @@ html,body {
 
 }
 
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+
 /* Navbar */
 #buttonsLanguage {
     margin: 0;
     justify-content: flex-end;
+}
+
+/*Navbar Color*/
+nav {
+    background-color: #ffb6b6;
+}
+
+/* Social Button Color*/
+.socialButton {
+    color: #679b9b;
 }
 
 /* Twitter Button */
@@ -32,7 +58,14 @@ html,body {
 
 /* Link buttons colors */
 a:visited {
-    color: gray;
+    color: #679b9b;
+}
+
+/* Carousel Back-Color*/
+#carousel {
+    background-color: #fde2e2;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 /* Paragraph dimensions */
@@ -46,9 +79,10 @@ p {
 }
 
 /* Footer Alignment */
-.footer {
+#footer {
     text-align: center;
     bottom: 0;
+    background-color: #679b9b;
 }
 
 
@@ -57,9 +91,16 @@ p {
     align-self: left;
 }
 
+/* CSS Header*/
+#header {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+}
 
-
-
+/* CSS Header*/
+#header h1 {
+    margin-bottom: 4vh;
+}
 
 
 

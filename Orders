@@ -1,27 +1,6 @@
-ok_1. allo logo
-
-ok_2. allo color sta links (about us)
-
-ok_3. margin sta social buttons
-
-ok_4. na mh fainetai to keno sta deksia ths selidas (CAROUSEL/PIPOULA#NOT)
-
-ok_5. na organwseis to css (oles oi klaseis tou navbar panw me comments)
-
-ok_6. collapse header link buttons
-
-ok_7Etouto den mou arese arketa! 
-row
-    col-12
-        mikro keimeno
-row
-    col-8
-        carousel
-    col-4
-        tips
-row
-    col-12
-        megalo keimeno
-row
-    col-12
-        footer
+1. fix title in navbar mobile 
+2. give color to button 
+3. bres to width gia mobile sta media queries 
+4. copy paste media queries -> tha sbhseis to display none -> kanones gia fonts sizes 
+5. Padding/Margins/Background colors sta sections 
+6. Footer at the bottom
