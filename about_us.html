@@ -3,61 +3,58 @@
 <head>
 	<title>Fight Coronavirus (COVID-19)</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="donation.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-		<ul class="navbar mr-auto">
+	<nav class="navbar navbar-expand-lg sticky-top">
+		<ul class="navbar mr-auto margin-bottom-0">
 			<a class="navbar-brand" href="#">
 				<img id="logo" src="logo.png"/>
 			</a>
+			<h1 class="mobile-title hide-on-desktop">COVID-19</h1>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav">
 					<div class="nav-item">
-						<a href="Index.html" class="nav-link">Home</a>
+						<a href="Index.html" class="nav-link"><b>HOME</b></a>
 					</div>
 					<div class="nav-item">
-						<a href="events.html" class="nav-link">Events</a>
+						<a href="events.html" class="nav-link"><b>EVENTS</b></a>
 					</div>
 					<div class="nav-item">
-					<a href="donation_page.html" class="nav-link">Donation</a>
+					<a href="donation_page.html" class="nav-link"><b>DONATION</b></a>
 					</div>
 					<div class="nav-item">
-						<a href="about_us.html" class="nav-link">About us</a>
+						<a href="about_us.html" class="nav-link"><b>ABOUT US</b></a>
 					</div>
-						<a href="contact_us.html" class="nav-link">Contact us</a>
+						<a href="contact_us.html" class="nav-link"><b>CONTACT US</b></a>
 					</div>
 				</ul>
 			</div>
 		</ul>
-		<div id="buttonsLanguage" class="row">
-			<ul class="navbar mr-auto">
+		<div id="buttonsLanguage" class="row show-on-desktop">
+			<ul class="navbar mr-auto margin-bottom-0">
 				<div class="col-md-1">
-					<a id="facebookButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+					<a class="socialButton" href="https://developers.facebook.com/docs/facebook-login/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
 				</div>
 				<div class="col-md-1">
-					<a id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+					<a class="socialButton" id="twitterButton" href="https://twitter.com/i/flow/signup"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
 				</div>
 				<div class="col-md-1">
-					<a id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a>
+					<a class="socialButton" id="googlePlusButton" href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fa fa-google-plus-square" style="font-size:36px"></i></a>
 				</div>
 				<div class="col-md-3">
 					<select class="selectpicker" data-width="fit" onchange="location = this.value;">
 						<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="about_us.html">English</option>
-						<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="about_usGr.html">Ελληνικά</option>
+						<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="about_usGR.html">Ελληνικά</option>
 					</select>
 				</div>
 				<div class="offset-1">
@@ -65,7 +62,7 @@
 			</div>
 		</ul>
 	</nav>
-	<div class="row">
+	<div class="row alignCenter">
 		<div class="offset-2">
 		</div>
 		<div class="col-md-8">
@@ -79,9 +76,9 @@
 	<div class="row">
 		<div class="offset-2">
 		</div>
-		<div class="col-md-8" id="alignCenter">
+		<div class="col-md-8 alignCenter">
 			<div>
-				<img src="non-profit.png" width="550px" height="500px"/>
+				<img src="non-profit.png" width="350px" height="320px"/>
 			</div>
 		</div>
 		<div class="offset-2">
@@ -91,8 +88,8 @@
 		<div class="offset-1">
 		</div>
 		
-		<div class="col-md-10" >
-			<h5 id="alignCenter"><b><i>"We Are a Non-Profit Charity Organization That Provides Resources to People in Need!"</i></b></h5>
+		<div class="col-md-10" id="abouttext">
+			<h5 class="alignCenter"><b><i>"We Are a Non-Profit Charity Organization That Provides Resources to People in Need!"</i></b></h5>
 			<div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ligula luctus, varius enim id, vestibulum nisi. Phasellus blandit ligula sed leo fringilla, nec lobortis neque sagittis. Nulla nisl ipsum, varius a consequat sed, mollis et justo. Sed rhoncus eros ac mollis dapibus. Mauris sed posuere ex. Pellentesque vulputate, leo at sodales volutpat, odio metus tristique lacus, vel finibus elit lorem vel nibh. Cras aliquam tortor felis, eu eleifend purus molestie et.
 					Ut commodo commodo rhoncus. Pellentesque erat sem, pretium non rutrum ac, eleifend quis est. Mauris viverra elementum ex, nec semper urna blandit in. Mauris euismod sagittis nulla. Pellentesque eu maximus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus gravida velit a facilisis tincidunt. Suspendisse viverra pulvinar tincidunt. Praesent ullamcorper faucibus nibh, id bibendum neque. Cras porttitor ipsum eget blandit dignissim. Sed eget nisi viverra, pretium leo tempus, malesuada turpis. In hac habitasse platea dictumst. In mi odio, pulvinar sit amet nulla eu, pellentesque varius justo. Sed lacinia fermentum ipsum quis pharetra.
@@ -106,13 +103,13 @@
 	<div class="row" id="footer">
 		<div class="col-md-12">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
+				<a id="url" href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
 			</div>
 			<script src="donation.js"></script>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		</div>
+	</div>
 </body>
 </html>
-

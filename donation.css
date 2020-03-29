@@ -23,11 +23,20 @@ html,body {
 #logo{
     width: 70px;
     height: 70px;
-
 }
 
+/* Navbar Text Color */
+.nav-item {
+    color: #679b9b;
+}
+
+/* Margin Bottom */
 .margin-bottom-0{
     margin-bottom: 0;
+}
+
+.navbar-toggler-icon {
+    background-color: #679b9b;
 }
 
 /* Navbar */
@@ -74,7 +83,7 @@ p {
 }
 
 /* Alignment */
-#alignCenter {
+.alignCenter {
     text-align: center;
 }
 
@@ -102,8 +111,44 @@ p {
     margin-bottom: 4vh;
 }
 
+/* CSS Main Text Index */
+#mainIndex {
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+}
 
+/* CSS Main Text Index */
+#mainIndex p{
+    margin-top: 3vh;   
+}
 
+/* Url Footer Color */
+#url {
+    color: black;
+}
 
+/* Events header */
+#events {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
 
+/* Events main */
+#eventslist {
+    margin-top: 10vh;
+    background-color: #fde2e2;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
 
+/* Donation Header */
+#donationHeader {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+#abouttext {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    margin-bottom: 15px;
+}
