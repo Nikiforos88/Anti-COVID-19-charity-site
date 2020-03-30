@@ -128,8 +128,25 @@ p {
 
 /* Events main */
 #eventslist {
-    margin-bottom: 10vh;
     background-color: #fde2e2;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+/* Donation header */
+#donationheader {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+/* About us header */
+#aboutheader {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+/* Contact us header */
+#contact {
     padding-top: 4vh;
     padding-bottom: 4vh;
 }
@@ -146,3 +163,18 @@ p {
     padding-bottom: 7vh;
     margin-bottom: 15px;
 }
+
+
+
+/* Media Queries for sections and font-size */
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+@media (min-width: 1024px) {
+   
+}
+
+
