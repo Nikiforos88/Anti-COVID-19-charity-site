@@ -1,14 +1,13 @@
 /* Media Queries for sections and font-size */
-@media (max-width: 649px) {
+@media (max-width: 767px) {
     .show-on-desktop, .show-on-tablets, .hide-on-mobile { display: none!important; }
 }
-@media (min-width: 650px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .show-on-desktop, .hide-on-tablets, .show-on-mobile { display: none!important; }
 }
-@media (min-width: 980px) {
+@media (min-width: 1024px) {
     .hide-on-desktop, .show-on-tablets, .show-on-mobile { display: none!important; }
 }
-
 
 /* Page dimension settings*/
 html,body {
@@ -20,23 +19,18 @@ html,body {
 }
 
 /* Navnar Logo */
-#logo{
+#logo {
     width: 70px;
     height: 70px;
 }
 
 /* Navbar Text Color */
 .nav-item {
-    color: #679b9b;
+    color: #ffb6b6;
 }
-
 /* Margin Bottom */
-.margin-bottom-0{
+.margin-bottom-0 {
     margin-bottom: 0;
-}
-
-.navbar-toggler-icon {
-    background-color: #679b9b;
 }
 
 /* Navbar */
@@ -94,7 +88,6 @@ p {
     background-color: #679b9b;
 }
 
-
 /* Non-profit Label*/
 #nonProfit {
     align-self: left;
@@ -135,7 +128,7 @@ p {
 
 /* Events main */
 #eventslist {
-    margin-top: 10vh;
+    margin-bottom: 10vh;
     background-color: #fde2e2;
     padding-top: 4vh;
     padding-bottom: 4vh;
@@ -147,6 +140,7 @@ p {
     padding-bottom: 7vh;
 }
 
+/* About us Text */
 #abouttext {
     padding-top: 7vh;
     padding-bottom: 7vh;
