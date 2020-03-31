@@ -151,6 +151,16 @@ p {
     padding-bottom: 4vh;
 }
 
+/* Contact us */
+#cont {
+    margin-bottom: 10vh;
+}
+
+/* Map id Tablet */
+#mapTablet {
+    margin-top: 8vh;
+}
+
 /* Donation Header */
 #donationHeader {
     padding-top: 7vh;
@@ -164,14 +174,16 @@ p {
     margin-bottom: 15px;
 }
 
-
-
+/* Margin zero */
+.margin0 {
+    margin: 0 auto;
+}
 /* Media Queries for sections and font-size */
 @media (max-width: 767px) {
 
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    
+ 
 }
 @media (min-width: 1024px) {
    
