@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="donation.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,12 +14,12 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top">
-		<ul class="navbar mr-auto margin-bottom-0">
+		<ul class="navbar mr-auto margin-bottom-0 width-full" >
 			<a class="navbar-brand" href="#">
 				<img id="logo" src="logo.png"/>
 			</a>
-			<h4 class="mobile-title hide-on-desktop mr-auto margin-bottom-0">COVID-19</h4>
-			<button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarMenu">
+			<h4 class="mobile-title hide-on-desktop margin-bottom-0 alignCenter" id="covid">COVID-19</h4>
+			<button class="navbar-toggler navbar-dark alignCenter align-items-center" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
@@ -54,7 +55,7 @@
 				<div class="col-md-3">
 					<select class="selectpicker" data-width="fit" onchange="location = this.value;">
 						<option data-content='<span class="flag-icon flag-icon-us"></span> English' value="Index.html">English</option>
-						<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="IndexGR.html">Ελληνικά</option>
+						<option data-content='<span class="flag-icon flag-icon-el"></span> Greek' value="IndexGr.html">Ελληνικά</option>
 					</select>
 				</div>
 				<div class="offset-1">
@@ -62,52 +63,55 @@
 			</div>
 		</ul>
 	</nav>
-	<div class="row alignCenter" id="contact">
-		<div class="offset-3">
+	<div class="content-wrapper">
+		<div class="row alignCenter" id="contact">
+			<div class="offset-3">
+			</div>
+			<div class="col-md-6">
+				<br>
+				<h1 class="alignCenter">Contact us</h1>
+				<br>
+				<p class="alignCenter"><b>Address: </b>Fidipidou 13, Athens</p>
+				<p class="alignCenter"><b>Phone: </b>2107776565</p>
+				<p class="alignCenter"><b>Fax: </b>2107776556</p>
+				<br>
+			</div>
+			<div class="offset-3">
+			</div>
 		</div>
-		<div class="col-md-6">
-			<br>
-			<h1 class="alignCenter">Contact us</h1>
-			<br>
-			<p class="alignCenter"><b>Address: </b>Fidipidou 13, Athens</p>
-			<p class="alignCenter"><b>Phone: </b>2107776565</p>
-			<p class="alignCenter"><b>Fax: </b>2107776556</p>
-			<br>
-		</div>
-		<div class="offset-3">
-		</div>
-	</div>
-	<div class="row alignCenter">
-		<div class="col-md-6">
-			<img class="show-on-mobile" src="googleMaps.PNG" width="300" height="230"/>
-			<img class="hide-on-mobile hide-on-desktop" id="mapTablet" src="googleMaps.PNG" width="370" height="300"/>
-			<br>
-			<img class="show-on-desktop" id="cont" src="googleMaps.PNG" width="600" height="430"/>
-			<br><br>
-		</div>
-		<div class="col-md-4">
-			<br><br><br><br>
-			<h3>Email form:</h3>
-			<form>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Your message</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Text your message here...">
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-			<br>
-		</div>
-		<div class="offset-2">
+		<div class="row alignCenter">
+			<div class="col-md-6">
+				<img class="show-on-mobile" src="googleMaps.PNG" width="300" height="230"/>
+				<img class="hide-on-mobile hide-on-desktop" id="mapTablet" src="googleMaps.PNG" width="370" height="300"/>
+				<br>
+				<img class="show-on-desktop" id="cont" src="googleMaps.PNG" width="600" height="430"/>
+				<br><br>
+			</div>
+			<div class="col-md-4">
+				<br><br><br><br>
+				<h3>Email form:</h3>
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Your message</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Text your message here...">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				<br>
+			</div>
+			<div class="offset-2">
+			</div>
 		</div>
 	</div>
 	<div class="row" id="footer">
 		<div class="col-md-12">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a id="url" href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
+				<a class="url" href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
+				<a class="hide-on-desktop url" href="IndexGr.html"> - <span class="flag-icon flag-icon-gr"></span> Greek</a>
 			</div>
 			<script src="donation.js"></script>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

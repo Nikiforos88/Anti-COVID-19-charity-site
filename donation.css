@@ -18,6 +18,12 @@ html,body {
     overflow-x: hidden;
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 /* Navnar Logo */
 #logo {
     width: 70px;
@@ -81,6 +87,15 @@ p {
     text-align: center;
 }
 
+/* Full Width */
+.width-full {
+    width: 100%;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
 /* Footer Alignment */
 #footer {
     text-align: center;
@@ -116,14 +131,14 @@ p {
 }
 
 /* Url Footer Color */
-#url {
-    color: black;
+.url {
+    color: #212529!important;
 }
 
 /* Events header */
 #events {
-    padding-top: 7vh;
-    padding-bottom: 7vh;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
 }
 
 /* Events main */
@@ -135,7 +150,7 @@ p {
 
 /* Donation header */
 #donationheader {
-    padding-top: 4vh;
+    padding-top: 5vh;
     padding-bottom: 4vh;
 }
 
@@ -178,15 +193,24 @@ p {
 .margin0 {
     margin: 0 auto;
 }
-/* Media Queries for sections and font-size */
-@media (max-width: 767px) {
 
+/* Font Families */
+h1 {
+    font-family: "soleil",sans-serif;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
- 
+h3 {
+    font-family: "soleil",sans-serif;
+    font-size: large;
 }
-@media (min-width: 1024px) {
-   
+h6 {
+    font-family: "soleil",sans-serif;
+    font-size: large;
 }
-
-
+p {
+    font-family: "soleil",sans-serif;
+    font-size: large;
+}
+a {
+    font-family: "soleil",sans-serif;
+    font-size: medium;
+}

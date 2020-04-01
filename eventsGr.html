@@ -4,7 +4,8 @@
     <title>Fight Coronavirus (COVID-19)</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="stylesheet" href="donation.css">
+    <link rel="stylesheet" href="donation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,12 +14,12 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top">
-		<ul class="navbar mr-auto margin-bottom-0">
+		<ul class="navbar mr-auto margin-bottom-0 width-full" >
 			<a class="navbar-brand" href="#">
 				<img id="logo" src="logo.png"/>
 			</a>
-			<h4 class="mobile-title hide-on-desktop mr-auto margin-bottom-0">COVID-19</h4>
-			<button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarMenu">
+			<h4 class="mobile-title hide-on-desktop margin-bottom-0 alignCenter" id="covid">COVID-19</h4>
+			<button class="navbar-toggler navbar-dark alignCenter align-items-center" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
@@ -61,131 +62,138 @@
 			</div>
 		</ul>
     </nav>
-    <div class="row" id="events"> 
-        <div class="offset-2">
-		</div>
-        <div class="col-md-8">
-            <h1 class="alignCenter">Εκδηλώσεις</h1>
+    <div class="content-wrapper">
+        <div class="row" id="events"> 
+            <div class="offset-2">
+            </div>
+            <div class="col-md-8">
+                <h1 class="alignCenter">Εκδηλώσεις</h1>
+            </div>
+            <div class="offset-2">
+            </div>
         </div>
-        <div class="offset-2">
+        <div class="row alignCenter show-on-desktop hide-on-mobile" id="events">
+            <div class="offset-2">
+            </div>
+            <div class="col-md-8 alignCenter">
+                <img class="show-on-tablet hide-on-mobile hide-on-desktop" src="stayHome.jpg" width="200px" height="100px"/>
+                <img class="show-on-desktop" src="stayHome.jpg" width="400px" height="300px"/>
+            </div>
+            <div class="offset-2">
+            </div>
         </div>
-    </div>
-    <div class="row alignCenter show-on-desktop hide-on-mobile" id="events">
-        <div class="offset-2">
-		</div>
-        <div class="col-md-8 alignCenter">
-            <img class="show-on-tablet hide-on-mobile hide-on-desktop" src="stayHome.jpg" width="200px" height="100px"/>
-            <img class="show-on-desktop" src="stayHome.jpg" width="400px" height="300px"/>
-        </div>
-        <div class="offset-2">
-        </div>
-    </div>
-    <div class="row" id="eventslist">
-        <div class="offset-1">
-        </div>
-        <div class="col-md-4">
-            <a href="#" class="list-group-item list-group-item-action active">
-            <b>Λίστα εκδηλώσεων</b>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">έως 21/04/20 Μένουμε σπίτι!</a>
-            <a href="#" class="list-group-item list-group-item-action">...</a>
-            <a href="#" class="list-group-item list-group-item-action">...</a>
-            <a href="#" class="list-group-item list-group-item-action disabled">...</a>
-        </div>
-        <div class="offset-2">
-        </div>
-        <div class="col-md-3">
-            <div class="container alignCente">
-                <div class="alignCenter">
-                    <div class="span12">
-                        <table class="table-condensed table-bordered table-striped margin0">
-                            <thead>
-                                <tr>
-                                <th colspan="7">
-                                    <span class="btn-group">
-                                        <a class="btn active">Απρίλιος 2020</a>
-                                        <a class="btn"><i class="icon-chevron-right"></i></a>
-                                    </span>
-                                </th>
-                                </tr>
-                                <tr>
-                                    <th>Δε</th>
-                                    <th>Τρ</th>
-                                    <th>Τε</th>
-                                    <th>Πε</th>
-                                    <th>Πα</th>
-                                    <th>Σα</th>
-                                    <th>Κυ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="muted">30</td>
-                                    <td class="muted">31</td>
-                                    <td>1</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>7</td>
-                                    <td>8</td>
-                                    <td>9</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td>14</td>
-                                    <td>15</td>
-                                    <td>16</td>
-                                    <td>17</td>
-                                    <td>18</td>
-                                    <td>19</td>
-                                </tr>
-                                <tr>
-                                    <td>20</td>
-                                    <td class="btn-primary"><strong>21</strong></td>
-                                    <td>22</td>
-                                    <td>23</td>
-                                    <td>24</td>
-                                    <td>25</td>
-                                    <td>26</td>
-                                </tr>
-                                <tr>
-                                    <td>27</td>
-                                    <td>28</td>
-                                    <td>29</td>
-                                    <td>30</td>
-                                    <td class="muted">1</td>
-                                    <td class="muted">2</td>
-                                    <td class="muted">3</td>
-                                </tr>
-                            </tbody>
-                        </table>
+        <div class="row" id="eventslist">
+            <div class="offset-1">
+            </div>
+            <div class="col-md-4">
+                <a href="#" class="list-group-item list-group-item-action active">
+                <b>Λίστα εκδηλώσεων</b>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">έως 21/04/20 Μένουμε σπίτι!</a>
+                <a href="#" class="list-group-item list-group-item-action">...</a>
+                <a href="#" class="list-group-item list-group-item-action">...</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">...</a>
+            </div>
+            <div class="offset-2">
+            </div>
+            <div class="col-md-3">
+                <div class="container alignCente">
+                    <div class="alignCenter">
+                        <div class="span12">
+                            <table class="table-condensed table-bordered table-striped margin0">
+                                <thead>
+                                    <tr>
+                                    <th colspan="7">
+                                        <span class="btn-group">
+                                            <a class="btn active">Απρίλιος 2020</a>
+                                            <a class="btn"><i class="icon-chevron-right"></i></a>
+                                        </span>
+                                    </th>
+                                    </tr>
+                                    <tr>
+                                        <th>Δε</th>
+                                        <th>Τρ</th>
+                                        <th>Τε</th>
+                                        <th>Πε</th>
+                                        <th>Πα</th>
+                                        <th>Σα</th>
+                                        <th>Κυ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="muted">30</td>
+                                        <td class="muted">31</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td class="btn-primary"><strong>21</strong></td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td class="muted">1</td>
+                                        <td class="muted">2</td>
+                                        <td class="muted">3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="offset-3">
+                <div class="offset-3">
+                </div>
             </div>
         </div>
     </div>
 	<div class="row" id="footer">
 		<div class="col-md-12">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a id="url"  href="https://google.gr/"> Νικηφόρος_Ιωαννίδης.gr</a>
+				<a class="url"  href="https://google.gr/"> Νικηφόρος_Ιωαννίδης.gr</a>
+				<a class="hide-on-desktop url" href="Index.html"> - <span class="flag-icon flag-icon-us"></span> English</a>
 			</div>
 			<script src="donation.js"></script>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		</div>
+	</div>
 	</body>
 	</html>
-    
+
+
+
+
     
     
     

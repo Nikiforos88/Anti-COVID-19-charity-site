@@ -4,7 +4,8 @@
   <title>Fight Coronavirus (COVID-19)</title>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="stylesheet" href="donation.css">
+  <link rel="stylesheet" href="donation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,12 +14,12 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg sticky-top">
-		<ul class="navbar mr-auto margin-bottom-0">
+		<ul class="navbar mr-auto margin-bottom-0 width-full" >
 			<a class="navbar-brand" href="#">
 				<img id="logo" src="logo.png"/>
 			</a>
-			<h4 class="mobile-title hide-on-desktop mr-auto margin-bottom-0">COVID-19</h4>
-			<button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#navbarMenu">
+			<h4 class="mobile-title hide-on-desktop margin-bottom-0 alignCenter" id="covid">COVID-19</h4>
+			<button class="navbar-toggler navbar-dark alignCenter align-items-center" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
@@ -62,140 +63,143 @@
 			</div>
 		</ul>
 	</nav>
-  <div class="row alignCenter" id="donationheader">
-    <div class="col-md-12">
-      <div class="alignCenter">
-        <br>
-        <h1 class="alignCenter">Give us your help</h1>
-        <br>
+  <div class="content-wrapper">
+    <div class="row alignCenter" id="donationheader">
+      <div class="col-md-12">
+        <div class="alignCenter">
+          <br>
+          <h1 class="alignCenter">Give us your help</h1>
+          <br>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row alignCenter">
-    <div class="offset-1">
-    </div>
-    <div class="col-md-10 show-on-desktop">
-      <div class="alignCenter">
-        <img src="donationWallpaper.jpg" alt="420" width="400px" height="270px"/>
+    <div class="row alignCenter">
+      <div class="offset-1">
+      </div>
+      <div class="col-md-10 show-on-desktop">
+        <div class="alignCenter">
+          <img src="donationWallpaper.jpg" alt="420" width="400px" height="270px"/>
+        </div>
+      </div>
+      <div class="offset-1">
       </div>
     </div>
-    <div class="offset-1">
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="offset-4">
-    </div>
-    <div class="col-md-4" id="donationheader">
-      <div class="alignCenter">
-        <form class="needs-validation" novalidate>
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
-              <label for="validationCustom01">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="validationCustom02">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="validationCustomUsername">Email</label>
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+    <br>
+    <div class="row">
+      <div class="offset-4">
+      </div>
+      <div class="col-md-4" id="donationheader">
+        <div class="alignCenter">
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                  Looks good!
                 </div>
-                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustomUsername">Email</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">IBAN</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
                 <div class="invalid-feedback">
-                  Please choose a username.
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please select a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
                 </div>
               </div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationCustom03">IBAN</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
               </div>
             </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationCustom04">State</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="validationCustom05">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-              <label class="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div class="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
-          <br>
-          <button class="btn btn-primary" type="submit">Submit
-        </form>
-            <script>
-              (function() { 'use strict';
-                 window.addEventListener('load', function() {
-                 var forms = document.getElementsByClassName('needs-validation');
-                 var validation = Array.prototype.filter.call(forms, function(form) {
-                form.addEventListener('submit', function(event) {
-                  if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                  form.classList.add('was-validated');
+            <br>
+            <button class="btn btn-primary" type="submit">Submit
+          </form>
+              <script>
+                (function() { 'use strict';
+                   window.addEventListener('load', function() {
+                   var forms = document.getElementsByClassName('needs-validation');
+                   var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    }, false);
+                    });
                   }, false);
-                  });
-                }, false);
-              })();
-            </script>
+                })();
+              </script>
+        </div>
+      </div>
+      <div class="offset-4">
       </div>
     </div>
-    <div class="offset-4">
-    </div>
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <p class="alignCenter"><b>Or</b></p>
+              <div class="alignCenter">
+              <a href="https://www.paypal.com/us/home"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png"/></a>
+            <br>
+            <br>
+            <br>
+          </div>
+          </div>
+        </div>
   </div>
-      <div class="row align-items-center">
-        <div class="col-md-12">
-          <p class="alignCenter"><b>Or</b></p>
-            <div class="alignCenter">
-            <a href="https://www.paypal.com/us/home"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png"/></a>
-          <br>
-          <br>
-          <br>
-        </div>
-        </div>
-      </div>
-  <div divclass="row" id="footer">
-    <div class="col-md-12">
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a id="url" href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
-      </div>
-        <script src="donation.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      </div>
-</div>
+	<div class="row" id="footer">
+		<div class="col-md-12">
+			<div class="footer-copyright text-center py-3">© 2020 Copyright:
+				<a class="url" href="https://google.gr/"> Νikiforos_Ιoannidis.com</a>
+				<a class="hide-on-desktop url" href="IndexGr.html"> - <span class="flag-icon flag-icon-gr"></span> Greek</a>
+			</div>
+			<script src="donation.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		</div>
+	</div>
 </body>
 </html>

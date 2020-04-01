@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" href="donation.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -13,11 +14,11 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top">
-		<ul class="navbar mr-auto margin-bottom-0">
+		<ul class="navbar mr-auto margin-bottom-0 width-full" >
 			<a class="navbar-brand" href="#">
 				<img id="logo" src="logo.png"/>
 			</a>
-			<h4 class="mobile-title hide-on-desktop mr-auto margin-bottom-0" id="covid">COVID-19</h4>
+			<h4 class="mobile-title hide-on-desktop margin-bottom-0 alignCenter" id="covid">COVID-19</h4>
 			<button class="navbar-toggler navbar-dark alignCenter align-items-center" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -62,58 +63,60 @@
 			</div>
 		</ul>
 	</nav>
-	<div class="row alignCenter" id="aboutheader">
-		<div class="offset-2">
-		</div>
-		<div class="col-md-8">
-			<br>
-			<h1 id="alignCenter">Σχετικά με εμάς</h1>
-			<br>
-		</div>
-		<div class="offset-2">
-		</div>
-	</div>
-	<div class="row">
-		<div class="offset-2">
-		</div>
-		<div class="col-md-8 alignCenter">
-			<div>
-				<img src="non-profit.png" width="350px" height="320px"/>
+	<div class="content-wrapper">
+		<div class="row alignCenter" id="aboutheader">
+			<div class="offset-2">
+			</div>
+			<div class="col-md-8">
+				<br>
+				<h1 id="alignCenter">Σχετικά με εμάς</h1>
+				<br>
+			</div>
+			<div class="offset-2">
 			</div>
 		</div>
-		<div class="offset-2">
-		</div>
-	</div>
-	<div class="row">
-		<div class="offset-1">
-		</div>
-		
-		<div class="col-md-10" id="abouttext">
-			<h5 class="alignCenter" id="aboutheader"><b><i>"Είμαστε ένας μη κερδοσκοπικός οργανισμός και προσπαθούμε να συλλέξουμε πόρους για ανθρώπους που βρίσκονται σε ανάγκη!"</i></b></h5>
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ligula luctus, varius enim id, vestibulum nisi. Phasellus blandit ligula sed leo fringilla, nec lobortis neque sagittis. Nulla nisl ipsum, varius a consequat sed, mollis et justo. Sed rhoncus eros ac mollis dapibus. Mauris sed posuere ex. Pellentesque vulputate, leo at sodales volutpat, odio metus tristique lacus, vel finibus elit lorem vel nibh. Cras aliquam tortor felis, eu eleifend purus molestie et.
-					Ut commodo commodo rhoncus. Pellentesque erat sem, pretium non rutrum ac, eleifend quis est. Mauris viverra elementum ex, nec semper urna blandit in. Mauris euismod sagittis nulla. Pellentesque eu maximus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus gravida velit a facilisis tincidunt. Suspendisse viverra pulvinar tincidunt. Praesent ullamcorper faucibus nibh, id bibendum neque. Cras porttitor ipsum eget blandit dignissim. Sed eget nisi viverra, pretium leo tempus, malesuada turpis. In hac habitasse platea dictumst. In mi odio, pulvinar sit amet nulla eu, pellentesque varius justo. Sed lacinia fermentum ipsum quis pharetra.
-					Vivamus molestie lectus quis tempus aliquet. In quis nunc dui. Nam non ligula in mauris suscipit vestibulum sed eget massa. Morbi egestas lacinia ligula, nec fringilla augue dictum id. Phasellus leo ipsum, venenatis ut dui eget, interdum congue tortor. Cras congue enim orci, sit amet pretium ligula fermentum id. Pellentesque ac fringilla neque. Fusce luctus tortor sit amet nibh consectetur cursus. Quisque leo nibh, ornare lobortis ullamcorper in, feugiat non neque. Etiam eu gravida neque. Nam pharetra arcu aliquam iaculis condimentum.
-				</p>
+		<div class="row">
+			<div class="offset-2">
+			</div>
+			<div class="col-md-8 alignCenter">
+				<div>
+					<img src="non-profit.png" width="350px" height="320px"/>
+				</div>
+			</div>
+			<div class="offset-2">
 			</div>
 		</div>
-		<div class="offset-1">
-		</div>
-	</div>	
+		<div class="row">
+			<div class="offset-1">
+			</div>
+			
+			<div class="col-md-10" id="abouttext">
+				<h5 class="alignCenter" id="aboutheader"><b><i>"Είμαστε ένας μη κερδοσκοπικός οργανισμός και προσπαθούμε να συλλέξουμε πόρους για ανθρώπους που βρίσκονται σε ανάγκη!"</i></b></h5>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac ligula luctus, varius enim id, vestibulum nisi. Phasellus blandit ligula sed leo fringilla, nec lobortis neque sagittis. Nulla nisl ipsum, varius a consequat sed, mollis et justo. Sed rhoncus eros ac mollis dapibus. Mauris sed posuere ex. Pellentesque vulputate, leo at sodales volutpat, odio metus tristique lacus, vel finibus elit lorem vel nibh. Cras aliquam tortor felis, eu eleifend purus molestie et.
+						Ut commodo commodo rhoncus. Pellentesque erat sem, pretium non rutrum ac, eleifend quis est. Mauris viverra elementum ex, nec semper urna blandit in. Mauris euismod sagittis nulla. Pellentesque eu maximus ante. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus gravida velit a facilisis tincidunt. Suspendisse viverra pulvinar tincidunt. Praesent ullamcorper faucibus nibh, id bibendum neque. Cras porttitor ipsum eget blandit dignissim. Sed eget nisi viverra, pretium leo tempus, malesuada turpis. In hac habitasse platea dictumst. In mi odio, pulvinar sit amet nulla eu, pellentesque varius justo. Sed lacinia fermentum ipsum quis pharetra.
+						Vivamus molestie lectus quis tempus aliquet. In quis nunc dui. Nam non ligula in mauris suscipit vestibulum sed eget massa. Morbi egestas lacinia ligula, nec fringilla augue dictum id. Phasellus leo ipsum, venenatis ut dui eget, interdum congue tortor. Cras congue enim orci, sit amet pretium ligula fermentum id. Pellentesque ac fringilla neque. Fusce luctus tortor sit amet nibh consectetur cursus. Quisque leo nibh, ornare lobortis ullamcorper in, feugiat non neque. Etiam eu gravida neque. Nam pharetra arcu aliquam iaculis condimentum.
+					</p>
+				</div>
+			</div>
+			<div class="offset-1">
+			</div>
+		</div>	
+	</div>
 	<div class="row" id="footer">
 		<div class="col-md-12">
 			<div class="footer-copyright text-center py-3">© 2020 Copyright:
-				<a id="url"  href="https://google.gr/"> Νικηφόρος_Ιωαννίδης.gr</a>
+				<a class="url"  href="https://google.gr/"> Νικηφόρος_Ιωαννίδης.gr</a>
+				<a class="hide-on-desktop url" href="Index.html"> - <span class="flag-icon flag-icon-us"></span> English</a>
 			</div>
 			<script src="donation.js"></script>
 			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		</div>
+	</div>
 	</body>
 	</html>
 
 
 
-
-	
