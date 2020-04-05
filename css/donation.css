@@ -67,8 +67,7 @@ nav {
 
 /* Link buttons colors */
 a:visited, a {
-    color: #679b9b;
-
+    color: #679b9b!important;
 }
 
 /* Carousel Back-Color*/
